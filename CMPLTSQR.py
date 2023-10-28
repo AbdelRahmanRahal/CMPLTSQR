@@ -61,4 +61,4 @@ def complete_square(a,b,c):
 
 p, q = complete_square(squared, x, constant)
 a = squared
-print('Result is: {}({} + ({}))^2 + ({})'.format(a, variable, p, q))
+print('Result is:\n{}({} + ({}))^2 + ({})'.format(a, variable, p, q))
