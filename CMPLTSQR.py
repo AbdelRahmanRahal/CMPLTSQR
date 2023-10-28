@@ -1,6 +1,6 @@
 print("Square Completer!")
 print("Enter the terms of your quadratic equation in standard form.")
-print("Addition is implied, terms separated by spaces.")
+print("Addition is implied, so separate each term by spaces.")
 print("Only use one kind of single-letter variable in the whole expression.")
 print("Surround computations such as constant multiplication and fractions in parentheses.\n")
 print("DO NOT put variables inside parentheses!\n")
@@ -18,7 +18,7 @@ variable_low = variable.lower()
 
 def split_into_terms(expression):
     terms = [str(eval(term)) if '(' in term and ')' in term else term for term in expression.split(' ')]
-    print("working with {}".format(' '.join(terms)))
+    print("Working with {}".format(' '.join(terms)))
     return terms
 
 terms = split_into_terms(user_in)
