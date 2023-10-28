@@ -1,12 +1,12 @@
 import re
 
 print(
-	"~~~Square Completer!~~~\n"
-	"Enter the terms of your quadratic equation in standard form.\n"
-	"Addition is implied, terms separated by spaces.\n"
-	"Only use one kind of single-letter variable in the whole expression.\n"
-	"Surround computations such as constant multiplication and fractions in parenthesis.\n"
-	"DO NOT put variables inside parenthesis!\n"
+    "~~~Square Completer!~~~\n"
+    "Enter the terms of your quadratic equation in standard form.\n"
+    "Addition is implied, terms separated by spaces.\n"
+    "Only use one kind of single-letter variable in the whole expression.\n"
+    "Surround computations such as constant multiplication and fractions in parenthesis.\n"
+    "DO NOT put variables inside parenthesis!\n"
 )
 user_in = input("> ")
 
@@ -25,7 +25,7 @@ variable = extract_variable(user_in)
 # eval all things in parens and split string into terms
 def split_into_terms(expression):
     expression = re.sub(r"\([^{0}\)]+\)".format(variable), lambda m: str(eval(m.group())), expression)
-    print(f"working with {expression}")
+    print("working with {}".format(expression))
     return expression.split(' ')
 
 terms = split_into_terms(user_in)
@@ -84,4 +84,4 @@ def complete_square(a,b,c):
 
 p, q = complete_square(squared, x, constant)
 a = squared
-print(f'Result is: {a}({variable} + ({p}))^2 + ({q})')
+print('Result is: {}({} + ({}))^2 + ({})'.format(a, variable, p, q))
