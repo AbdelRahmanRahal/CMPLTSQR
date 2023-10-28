@@ -41,5 +41,7 @@ For example, for $x^2 - 6x - 16 = 0$, you will write it like the following:
 
 `> 1x**2 -6x -16`
 
+<br>
+
 > [!IMPORTANT]
 > Make sure to write to always write $x^2$ as `x**2` and not `x^2`. You also have to specify the coefficient of all terms, even if it is 1. So, your final term should look like this `1x**2`.
