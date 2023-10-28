@@ -1,4 +1,4 @@
-print("~~~Square Completer!~~~")
+print("Square Completer!")
 print("Enter the terms of your quadratic equation in standard form.")
 print("Addition is implied, terms separated by spaces.")
 print("Only use one kind of single-letter variable in the whole expression.")
