@@ -13,7 +13,7 @@ For example, let's say you want to complete the square for $x^2 + 6x + 41 = 0$, 
 `> 1x**2 6x 41`
 
 This should show output the following:
-```txt
+```text
 working with 1x**2 6x 41
 ['1x**2', '6x', '41']
 unprocessed:
