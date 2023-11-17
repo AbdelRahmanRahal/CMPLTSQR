@@ -14,24 +14,9 @@ For example, let's say you want to complete the square for $x^2 + 6x + 41 = 0$, 
 
 This should show output the following:
 ```text
-working with 1x**2 6x 41
-['1x**2', '6x', '41']
-unprocessed:
-['1x']
-['6x']
-['41']
-squareds step1:
-['1']
-step2: ['1']
+Working with:
+1x**2 + 6x + 41
 
-processed:
-['1']
-['6x']
-['41']
-
- ***EXES:  ['6x'] ***
-
- ***SUMX:  6.0 ***
 Result is:
 1.0(x + (3.0))^2 + (32.0)
 ```
